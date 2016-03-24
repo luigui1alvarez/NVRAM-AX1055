@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:text="Sistema NVRAM/NVDATA"
+		android:gravity="center_horizontal"/>
+
+	<Button
+		android:onClick="onCopiarNVRAMButtonClick"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:text="HARDWARE IMEI COPIAR"
+		android:background="#50B817"/>
+
+	<Button
+		android:onClick="onRestaurarNVRAMButtonClick"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:text="HARDWARE IMEI RESTAURAR"
+		android:background="#BC382F"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="wrap_content"
+		android:text="Esta app permite copiar y restablecer la partición NVRAM y NVDATA (IMEI, MAC del WiFi y del Bluetooth)."/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="Por favor asegurese que los dos archivos 'nvram-ax1055.img' (5 MB) y 'nvdata-ax1055.img' (32 MB) se encuentre en la raíz de la memoria /sdcard"
+		android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:text="Unicamente para Bmobile AX1055, otros modelos no probados."/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:text="PRECAUCIÓN"
+		android:gravity="center_horizontal"/>
+
+	<TextView
+		android:layout_height="match_parent"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="wrap_content"
+		android:text="No presione el botón RESTAURAR dos veces seguidas, si lo hace el imei no se restaurará. Reinicie inmediatamente despues de restaurar. Puede que no se restaure a la primer vez. Reinicie y vuelva a intentar."
+		android:shadowColor="#000000"
+		android:gravity="center_horizontal"/>
+
+</LinearLayout>
+
